@@ -62,7 +62,7 @@ the first operand where `bool(operand)` is `False`.  If no operands have "falsy"
 values, then the last operand is returned.  `or` will return the first operand
 where `bool(operand)` is `True`.  If no operands have "truthy" values, the
 last operand is returned.  (For anyone who knows Javascript, this is exactly how
-`&&` and `||` work there).
+`&&` and `||` work).
 
 ```py
 1 and 0   # `0` because `0` is the first falsy operand.
@@ -73,6 +73,22 @@ last operand is returned.  (For anyone who knows Javascript, this is exactly how
 0 or 1      # `1` because `1` is the first truthy operand.
 0 or False  # `False` because no operands are truthy and `False` is the last operand.
 ```
+
+### Oddities
+
+Before I said there are three numeric types.  There are actually more -- boolean
+values are actually integers.  `True` can be used instead of `1` pretty much
+anywhere and `False` can be used instead of `0`.
+
+```py
+True + False  # 1
+True + True   # 2
+True * 30     # 30
+```
+
+You won't encounter this very much in modern python code -- It's very rarely
+useful.  Mostly, I metion this is so you can impress your friends or win at the
+next python trivia night that you attend.
 
 ----------
 <sup><sup>1</sup>In python2.x, they were just pre-defined variables rather

@@ -62,6 +62,10 @@ However, it doesn't always produce an `int`:
 5. // 2  # A float with the value of 2.0
 ```
 
+There are other operators that are supported for integers (bitwise arithmetic),
+but their usage isn't that common and is pretty advanced so I won't get into
+that here...
+
 ### Ranges and oddities
 
 Unlike some languages (e.g. `C`, `Fortran`), python integers can be arbitrarily
