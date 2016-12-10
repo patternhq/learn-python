@@ -90,6 +90,9 @@ You won't encounter this very much in modern python code -- It's very rarely
 useful.  Mostly, I metion this is so you can impress your friends or win at the
 next python trivia night that you attend.
 
+### Up Next
+[Conditional code execution!](../if-statement)
+
 ----------
 <sup><sup>1</sup>In python2.x, they were just pre-defined variables rather
 than being first-class keywords.  If this doesn't mean anything to you now,
