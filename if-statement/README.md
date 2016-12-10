@@ -87,7 +87,7 @@ in the terminal as a string.  We also haven't talked about how equality for
 strings works, but it should be straight forward to figure out.  The "bug" will
 show up if you try to input `15` as a floating number (e.g. if you type `15.0`)
 
-> python buggy_if.py<br>
+> $ python buggy_if.py<br>
 > Give me a number! 15.0<br>
 > Nice try.  Next time, give me 15<br>
 
