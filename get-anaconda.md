@@ -33,4 +33,25 @@ If you're done with working in a particular environment, you can deactivate it:
 source deactivate plearn
 ```
 
+Once you have an environment set up, we can test to see if it is working by
+invoking the interactive interpreter...
+
+```
+python
+```
+
+You should get something that looks like:
+
+```
+Python 3.5.2 |Continuum Analytics, Inc.| (default, Jul  2 2016, 17:52:12)
+[GCC 4.2.1 Compatible Apple LLVM 4.2 (clang-425.0.28)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+```
+
+From here, you can issue commands just as you would in a python script.  It's
+super nice for just messing around with things to see how it works.  You can
+also quickly check what python version you are working with (python 3.5.2 for
+me!).
+
 I tend to use [this cheat-sheet](http://conda.pydata.org/docs/_downloads/conda-cheatsheet.pdf) when I want to look up commands for anaconda.
