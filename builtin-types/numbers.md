@@ -14,6 +14,19 @@ need `complex` numbers.  Numbers can be constructed by writing them directly:
 1.0 + 0j  # A complex number with the value of 1.
 ```
 
+You can also construct numbers from strings or other numbers using the
+`float` and `int` built-ins:
+
+```py
+int('1')     # an integer with the value of 1
+int(1.8)     # an integer with the value of 1 (`int` always truncates toward 0).
+int(-1.8)    # an integer with the value of 1 (`int` always truncates toward 0).
+int('1.8')   # This is an error and won't work unlike other languages.
+
+float('1.')  # a float with the value of 1.
+float(1)     # a float with the value of 1.
+```
+
 Most of the operators in python work the way you would expect them to:
 
 ```py
