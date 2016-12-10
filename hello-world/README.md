@@ -21,4 +21,4 @@ text.  The second thing is a function call:
 print(...)
 ```
 
-Let's look at some of python's builtin types next.
+Let's look at some of python's builtin types [next](../builtin-types/README.md).

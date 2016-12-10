@@ -55,3 +55,5 @@ also quickly check what python version you are working with (python 3.5.2 for
 me!).
 
 I tend to use [this cheat-sheet](http://conda.pydata.org/docs/_downloads/conda-cheatsheet.pdf) when I want to look up commands for anaconda.
+
+Now that we have python set up, lets look at a [very basic python program](hello-world/README.md).
