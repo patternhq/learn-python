@@ -97,6 +97,25 @@ where you do funky things (like subtracting `inf` from `inf`):
 nan
 ```
 
+In addition to having a maximum and minimum allowable value, floats also are
+unable to represent all numbers within the range perfectly.  Specifically, a float
+is stored in `8` bytes of memory which is `8*8 = 64` bits.  Since each bit can take
+one of two values (`0` or `1`), there are a total of `2**64` discrete values which a
+float can represent.  Obviously the numbers between `0` and `1` are uncountable
+so it is impossible to represent them _all_.  If you find yourself in a weird
+situation where your results are off by a very small amount, don't ask a
+question on StackOverflow --
+[It's been asked before](http://stackoverflow.com/q/588004/748858) (many times).
+
+An example of getting an incorrect result due to floating point precision issues
+happens when you try to add a really small number to `1`.  In an ideal world,
+you would expect to get back a number that is slightly bigger than one, but in
+our world of floating point integers, you'll get back exactly `1`.
+
+```py
+1.0 + 1e-16   # 1.0
+```
+
 
 ### Quiz
 
@@ -107,6 +126,11 @@ What is the type of the result of the following _expressions_:
 3.  `1. + 2`
 4.  `1 + 2`
 5.  `1 + 3.`
+
+### External References
+
+1. [Python Tutorial](https://docs.python.org/3/tutorial/introduction.html#numbers)
+2. [Floating point math](https://docs.python.org/3/tutorial/floatingpoint.html)
 
 
 Now that we've learned about numbers (and a _tiny_ bit about strings), we are

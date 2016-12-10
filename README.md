@@ -17,4 +17,10 @@ unless you actually need to migrate a large codebase from python2.x to
 python3.x.  I'll try to at least mention when we talk about things that are
 inconsistent between python2.x and python3.x.
 
+There are lots of other great resources that you might want to reference as
+we go along.  Here's a few that I like in particular:
+
+1. [Official Python Tutorial](https://docs.python.org/3/tutorial/)
+2. [Official Python Style Guide](https://www.python.org/dev/peps/pep-0008/)
+
 First, lets get the environment set up using [anaconda](get-anaconda.md).

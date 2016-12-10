@@ -92,3 +92,7 @@ show up if you try to input `15` as a floating number (e.g. if you type `15.0`)
 > Nice try.  Next time, give me 15<br>
 
 Can you fix this bug?
+
+### External References
+
+1. [Python Tutorial](https://docs.python.org/3/tutorial/controlflow.html#if-statements)
