@@ -4,6 +4,8 @@ Python has 3 built-in number types:
 * float
 * complex
 
+### Making a number.
+
 Unless you're doing hard-core math or scientific computing, you probably won't
 need `complex` numbers.  Numbers can be constructed by writing them directly:
 
@@ -27,6 +29,8 @@ float('1.')  # a float with the value of 1.
 float(1)     # a float with the value of 1.
 ```
 
+### Basic mathematical operators
+
 Most of the operators in python work the way you would expect them to:
 
 ```py
@@ -42,6 +46,23 @@ For the most part, equations with all integers will produce an integer result
 (Aside from division as noted above).  If there is a float anywhere in
 an equation, the result will be a float.  After you work with this for a while,
 it'll become second nature and you probably won't even think about it.
+
+#### Floor division
+
+Python has an additional division operator (`//`).  Sometimes people refer to it
+as "integer" division because it causes the results to be truncated.  e.g.
+
+```py
+5 // 2  # An integer with the value of 2
+```
+
+However, it doesn't always produce an `int`:
+
+```py
+5. // 2  # A float with the value of 2.0
+```
+
+### Ranges and oddities
 
 Unlike some languages (e.g. `C`, `Fortran`), python integers can be arbitrarily
 big (`C` and `Fortran` cap out at `2**32`) and python integers are always
@@ -78,6 +99,7 @@ nan
 What is the type of the result of the following _expressions_:
 
 1.  `1. + 2.`
-2.  `1. + 2`
-3.  `1 + 2`
-4.  `1 + 3.`
+2.  `1 / 2`
+3.  `1. + 2`
+4.  `1 + 2`
+5.  `1 + 3.`
