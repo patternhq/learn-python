@@ -103,3 +103,8 @@ What is the type of the result of the following _expressions_:
 3.  `1. + 2`
 4.  `1 + 2`
 5.  `1 + 3.`
+
+
+Now that we've learned about numbers (and a _tiny_ bit about strings), we are
+almost ready to talk about writing a program with some logic.  However, we
+first need to understand [booleans](boolean.md) and boolean operators.
